@@ -750,7 +750,7 @@ proto_compile = rule(
       providers = ["proto_compile_result"]
     ),
     "protoc": attr.label(
-      default = Label("//external:protocol_compiler"),
+      default = Label("@com_google_protobuf//:protoc"),
       cfg = "host",
       executable = True,
     ),
